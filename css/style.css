@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Amiri", serif;
+    height: 1000px;
+}
+/* div{
+    height: 50vh;
+    background: url(../images/mosque.jpg) center no-repeat;
+    background-size: 100% 100%;
+} */
+:root{
+    --main-color : rgb(8, 59, 8);
+    --sec-color : rgb(5, 5, 40);
+}
+nav{
+    background: linear-gradient(270deg ,rgb(8, 59, 8) ,  rgb(5, 5, 40) );
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header{
+    position: relative;
+    overflow: hidden;
+}
+header video{
+    width: 100%;
+}
+header article{
+    width: 100%;
+    background-color: #0000008d;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+header h1 {
+    font-size: 64px;
+    text-align: center;
+}
+header p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-size: 25px;
+    width: 40%;
+    text-align: center;
+}
+header p b{
+    font-size: 35px;
+}
+
+@media (max-width:1277.60px) {
+    header video{
+        width: 1513px;
+    }
+}
+@media (max-width:478px) {
+    header h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    header p {
+        font-size: 20px;
+    }
+    header p b{
+        font-size: 25px;
+    }
+
+}
+@media (max-width:295px) {
+    header h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    header p {
+        font-size: 18px;
+    }
+    header p b{
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.persons{
+    margin-top: -10px;
+    min-height: 100vh;
+    background-image: linear-gradient(#0000003f , #0000003f) ,url(../images/mosque.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 40px;
+}
+.persons > b{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+.persons h1{
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+}
+.persons .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.persons .container .card{
+    width: calc((100% - 160px) / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+}
+.persons .container .card img{
+    width: 100%;
+    height: 300px;
+}
+.persons .container .card b{
+    font-size: 22px;
+}
+@media (max-width:920px) {
+    .persons .container .card{
+        width: calc((100% - 90px) / 2);
+    }
+}
+@media (max-width:650px) {
+    .persons .container .card{
+        width: 100%;
+    }
+}
+@media (max-width:450px) {
+    .persons{
+        padding: 100px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+.fatha{
+    padding: 50px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+    /* justify-content: center; */
+    gap: 40px;
+}
+.fatha h2{
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+}
+.fatha img{
+    width: 70%;
+    height: 800px;
+}
+@media (max-width:600px) {
+    .fatha img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tasbeh{
+    min-height: 100vh;
+    padding: 100px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 40px;
+    background-color: var(--sec-color);
+}
+.tasbeh h3{
+    font-size: 60px;
+    color: #fff;
+}
+.tasbeh .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.tasbeh .container .card{
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #ebebeb; */
+}
+.tasbeh .container .card img{
+    width: 100%;
+    height: 100%;
+}
+.tasbeh .container .card .contain{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.tasbeh .container .card .contain b{
+    font-size: 50px;
+    color: var(--main-color);
+    /* width: max-content; */
+    text-align: center;
+    text-shadow: 1px 1px 8px var(--sec-color);
+}
+.tasbeh .container .card .contain{
+    width: 40%;
+    left: 6%;
+}
+.tasbeh .container .card:last-of-type .contain b{
+    width: 100%;
+}
+.tasbeh .container .card .contain .sbha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.tasbeh .container .card .contain .sbha p{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    width: 50px;
+    height: 50px;
+    background-color: var(--sec-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.tasbeh .container .card .contain .sbha span{
+    font-size: 30px;
+}
+
+
+@media (max-width:400px) {
+    .tasbeh .container .card .contain{
+        width: 70%;
+    }
+    /* .tasbeh .container .card .contain b{
+        font-size: 35px;
+    } */
+}
+@media (max-width:260px) {
+    .tasbeh .container .card .contain{
+        width: 85%;
+    }
+    .tasbeh .container .card .contain b{
+        font-size: 35px;
+    }
+}
+
+
+@media (max-width:845px) {
+    /* .tasbeh .container .card:last-of-type .contain{
+        width: 40%;
+        left: 6%;
+    } */
+    .tasbeh .container .card:last-of-type .contain b{
+       font-size: 30px;
+    }
+}
+@media (max-width:375px) {
+    .tasbeh .container .card:last-of-type .contain{
+        width: 70%;
+        left: 6%;
+    }
+    .tasbeh .container .card:last-of-type .contain b{
+       font-size: 20px;
+    }
+}
+@media (max-width:272px) {
+    .tasbeh .container .card:last-of-type .contain{
+        width: 85%;
+        left: 6%;
+    }
+    .tasbeh .container .card:last-of-type .contain b{
+       font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: var(--main-color);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
