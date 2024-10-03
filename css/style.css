@@ -42,11 +42,13 @@ nav{
 
 
 header{
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
-}
-header video{
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: var(--main-color);
 }
 header article{
     width: 100%;
@@ -59,10 +61,6 @@ header article{
     justify-content: center;
     gap: 40px;
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
 }
 header h1 {
     font-size: 64px;
@@ -80,12 +78,6 @@ header p {
 }
 header p b{
     font-size: 35px;
-}
-
-@media (max-width:1277.60px) {
-    header video{
-        width: 1513px;
-    }
 }
 @media (max-width:478px) {
     header h1 {
