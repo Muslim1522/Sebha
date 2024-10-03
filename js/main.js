@@ -2,17 +2,13 @@
 let container = document.querySelector('.tasbeh .container')
 
 
-let sabah
-if(localStorage.getItem('data') == null){   
-sabah = [
+let sabah = [
      {zekr : "سُبْحَانَ اللهِ(33)" , amount : 0},
      {zekr : "الْحَمْدُ لِلَّـهِ(33)" , amount :0},
      {zekr : "اللهُ أكبر(33)" , amount:0},
      {zekr : "لا إلهَ إلَّا اللهُ، وَحْدَه لا شَريكَ له، له المُلكُ وله الحَمدُ، وهو على كُلِّ شَيءٍ قَديرٌ(1)" , amount:0}
  ]
-}else{
-    sabah = JSON.parse(localStorage.getItem('data'))
-}
+
 
 
 function setitems(){
@@ -33,7 +29,6 @@ function setitems(){
        `
     }
     container.innerHTML = item
-    localStorage.setItem('data' , JSON.stringify(sabah))
 }
 setitems()
 
